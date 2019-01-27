@@ -1,11 +1,12 @@
-const other = (s = '') => console.log(s + ' this comes from the other.js file');
-export default other;
-// module.exports = {
-//   // otherExported: other
-//   // asdasd: () => other('Uuuuu!')
-//   // other: other
-//   other
-// }
 
-// other();
-// module.exports.other()
+const other = (s = '') => console.log(s + ' this comes from the other.js file');
+
+const sumMe = (a, b) => {
+  let result = a + b;
+  return result;
+}
+
+export {
+  other,
+  sumMe
+}
